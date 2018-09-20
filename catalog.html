@@ -7,35 +7,35 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/index-logo.svg" href="index.html" width="50" height="150" alt="Логотип DEVICE">
-      </a>
-      <ul class="site-navigation">
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul>
-            <li><a href="virtual-reality.html"></a></li>
-            <li class="site-navigation-current"><a href="selfies-monopods.html">Моноподы для селфи</a></li>
-            <li><a href="action-camera.html">Экшн-камеры</a></li>
-            <li><a href="fitness-bracelets.html">Фитнес-браслеты</a></li>
-            <li><a href="smart-watch.html">Умные часы</a></li>
-            <li><a href="quadrocopters.html">Квадрокоптеры</a></li>
+    <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/index-logo.svg" width="50" height="150" alt="Логотип DEVICE">
+          </a>
+          <ul class="user-navigation">
+            <li><input type="search" name="search-user" placeholder="Поиск по сайту"> </li>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
           </ul>
-        </li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="warranty.html">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-      <ul class="user-navigation">
-        <li><input type="search" name="search-user" placeholder="Поиск по сайту"> </li>
-        <li><a href="login-link.html">Войти</a></li>
-        <li><a href="compare-link.html">Сравнить</a></li>
-        <li><a href="basket-link.html">Корзина</a></li>
-      </ul>
-    </nav>
-  </header>
+          <ul class="site-navigation">
+            <li>
+              <a href="catalog.html">Каталог товаров</a>
+              <ul>
+                <li><a href="#">Очки виртуальной реальности</a></li>
+                <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
 
   <main class="container">
     <h1 class="page-title">Моноподы для селфи</h1>
@@ -50,7 +50,7 @@
     </section>
     <section class="sort">
       <h2 class="visually-hidden">Сортировка товаров</h2>
-      <!--Сдесь будет сортировка-->
+      <!--Сдесь будет сортировка (не очень понимаю, как будет выглядеть пагинация, может дальше будет рассмотрено)-->
     </section>
 
     <section class="catalog">
@@ -101,29 +101,44 @@
                 <p class="catalog-item-price">4 900 руб.</p>
               </li>
       </ul>
+      <ul class="button-check">
+          <li><a class="button" href="#">В корзину</a></li>
+          <li><a class="button" href="#">Добавить к сравнению</a></li>
+      </ul>
+      <!--не уверен правильно ли добавил кнопку или надо было к каждому пункту добавлять?-->
       <ul class="pagination-list">
           <li class="pagination-item pagination-item-current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item-back"><a href="#">Назад</a></li>
+          <li class="pagination-item-next"><a href="#">Вперед</a></li>
       </ul>
-      <span class="button-back">Назад</span>
-      <span class="button-next">Вперед</span>
     </section>
   </main>
 
-  <footer class="main footer">
-    <a class="main-header-logo">
-      <img src="img/index-logo.svg" width="50" height="150" alt="Логотип DEVICE">
-    </a>
-    <p>г. Москва, ул. Строителей, 15</p>
+  <footer class="main-footer">
+    <ul class=user-navigation>
+      <li>><a><img src="img/index-logo-2.svg" width="50" height="150" alt="Логотип DEVICE"></a></li>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+    <ul>
+      <li><p>г. Москва, ул. Строителей, 15</p></li>
+      <li><a href="#.html">Доставка</a></li>
+      <li><a href="#.html">Гарантия</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><p>Тел.: +7(495)495-95-95</p></li>
+    </ul>
     <ul class="footer-navigation">
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="warranty.html">Гарантия</a></li>
+      <li><a href="#.html">Доставка</a></li>
+      <li><a href="#.html">Гарантия</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
     <div class="footer-social">
       <b class="visually-hidden">Давайте дружить!</b>
       <ul>
+        <li><img src="line.jpg"></li>
         <li>
           <a class="social-button" href="#">Фейсбук</a>
         </li>
@@ -133,14 +148,11 @@
         <li>
           <a class="social-button" href="#">Твиттер</a>
         </li>
+        <li>
+            <a class="academy-button" href="#">HTML академия</a>
+        </li>
       </ul>
     </div>
-    <ul class="user-navigation">
-      <li><a href="login-link.html">Войти</a></li>
-      <li><a href="compare-link.html">Сравнить</a></li>
-      <li><a href="basket-link.html">Корзина</a></li>
-    </ul>
-    <p>Тел.: +7(495)495-95-95</p>
   </footer>
 </body>
 </html>
