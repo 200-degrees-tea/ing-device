@@ -12,10 +12,16 @@
       <a class="main-header-logo">
         <img src="img/index-logo.svg" width="50" height="150" alt="Логотип DEVICE">
       </a>
-      <ul class="user-navigation">
-        <li><input type="search" name="search-user" placeholder="Поиск по сайту"> </li>
+      <ul class="search-header">
+        <li><input type="search" name="search-user" placeholder="Поиск по сайту"></li>
+      </ul>
+      <ul class="user-login-header">
         <li><a href="#">Войти</a></li>
+      </ul>
+      <ul class="user-compare-header">
         <li><a href="#">Сравнить</a></li>
+      </ul>
+      <ul class="user-basket-header">
         <li><a href="#">Корзина</a></li>
       </ul>
       <ul class="site-navigation">
@@ -46,54 +52,42 @@
         <input type="radio" id="slide2" name="slide">
         <input type="radio" id="slide3" name="slide">
 
-        <div class="controls">
+        <div class="slider-controls">
           <label for="slide1">Селфи палки</label>
           <label for="slide2">Умные часы</label>
           <label for="slide3">Квадрокоптеры</label>
         </div>
-        <section class="slide1">
+        <section class="slide-item-selfi">
           <img src="slide1.jpg" alt="Селфи палки">
-          <ul>
-            <li>
-              <h2>Делай селфи, как Бен Стиллер</h2>
-            </li>
-            <li>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
-              всего 5 килограмм.</li>
-            <li><a class="button" href="more.html">Подробнее</a></li>
-            <li class="char1">8,5 м</li>
-            <li>Длина палки</li>
-            <li class="char1">5 кг</li>
-            <li>Вес палки</li>
-            <li class="char1">Карбон</li>
-            <li>Материал</li>
-          </ul>
+          <h2>Делай селфи, как Бен Стиллер</h2>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
+            всего 5 килограмм.</p>
+          <a class="button" href="more.html">Подробнее</a>
+          <p class="char">8,5 м</p>
+          <p>Длина палки</p>
+          <p class="char">5 кг</p>
+          <p>Вес палки</p>
+          <p class="char">Карбон</p>
+          <p>Материал</p>
         </section>
-        <section class="slide2">
+        <section class="slide-item-watch">
           <img src="slide2.jpg" alt="Умные часы">
-          <ul>
-            <li>
-              <h2>Худеем правильно!</h2>
-            </li>
-            <li>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</li>
-            <li><a class="button" href="more.html">Подробнее</a></li>
-            <li class="char1">48 часов</li>
-            <li>Без подзарядки</li>
-          </ul>
+          <h2>Худеем правильно!</h2>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <a class="button" href="more.html">Подробнее</a>
+          <p class="char">48 часов</p>
+          <p>Без подзарядки</p>
         </section>
-        <section class="slide3">
+        <section class="slide-item-quadro">
           <img src="slide3.jpg" alt="Квадрокоптеры">
-          <ul>
-            <li>
-              <h2>Порхает как бабочка, жалит как пчела</h2>
-            </li>
-            <li>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскерованным под стандартную
-              камеру</li>
-            <li><a class="button" href="more.html">Подробнее</a></li>
-            <li class="char1">800 м</li>
-            <li>Дальность полета</li>
-            <li class="char1">50 м</li>
-            <li>Радиус поражения</li>
-          </ul>
+          <h2>Порхает как бабочка, жалит как пчела</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскерованным под стандартную
+            камеру</p>
+          <a class="button" href="more.html">Подробнее</a>
+          <p class="char">800 м</p>
+          <p>Дальность полета</p>
+          <p class="char">50 м</p>
+          <p>Радиус поражения</p>
         </section>
       </section>
     </section>
@@ -140,30 +134,30 @@
     </section>
     <section class="service-slide">
       <h2 class="visually-hidden">Сервисный слайд</h2>
-      <section class="sеrvice">
+      <section class="sеrvice-slide-controls">
         <h2 class="visually-hidden">Кнопки сервиса</h2>
         <input type="radio" id="delivery" name="service" checked>
         <input type="radio" id="warranty" name="service">
         <input type="radio" id="credit" name="service">
 
-        <div class="controls">
+        <div class="service-controls">
           <label for="delivery">Доставка</label>
           <label for="warranty">Гарантия</label>
           <label for="credit">Кредит</label>
         </div>
-        <section class="delivery">
+        <section class="service-controls-delivery">
           <img src="delivery.jpg" alt="Доставка">
           <h2>Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
             работаем, поднимая его на ваш этаж</p>
         </section>
-        <section class="waranty">
+        <section class="service-controls-waranty">
           <img src="warranty.jpg" alt="Гарантия">
           <h2>Гарантия</h2>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
             новый.Товар, не дом, конечно же.</p>
         </section>
-        <section class="credit">
+        <section class="service-controls-credit">
           <img src="credit.jpg" alt="Кредит">
           <h2>Кредит</h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
@@ -180,11 +174,12 @@
         <li><img src="img/vive" alt="VIVE"></li>
       </ul>
     </section>
-    <section class="about">
+    <section class="about-us">
       <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика который есть в каждом из нас. Мы можем доставить ваш товар
-        в самые отдаленные точки России! Device работает со многими транспортными компаниями:</p>
-      <ul class="about-us">
+      <p>Огромный выбор гаджетов не оставит равнодушным гика который есть в каждом из нас.</p>
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными
+        компаниями:</p>
+      <ul class="about-us-clients">
         <li><b>Деловые линии</b></li>
         <li><b>Автотрейдинг</b></li>
         <li><b>ЖелДорЭкспедиция</b></li>
@@ -202,28 +197,25 @@
   <footer class="main-footer">
     <ul class=user-navigation>
       <li>><a><img src="img/index-logo-2.svg" width="50" height="150" alt="Логотип DEVICE"></a></li>
+    </ul>
+    <ul class="user-login-footer">
       <li><a href="#">Войти</a></li>
+    </ul>
+    <ul class="user-compare-footer">
       <li><a href="#">Сравнить</a></li>
+    </ul>
+    <ul class="user-basket-footer">
       <li><a href="#">Корзина</a></li>
     </ul>
+    <p class="text-footer">г. Москва, ул. Строителей, 15</p>
     <ul>
-      <li>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </li>
       <li><a href="#.html">Доставка</a></li>
       <li><a href="#.html">Гарантия</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-      <li>
-        <p>Тел.: +7(495)495-95-95</p>
-      </li>
+      <li><a href="#">Контакты</a></li>
     </ul>
-    <ul class="footer-navigation">
-      <li><a href="#.html">Доставка</a></li>
-      <li><a href="#.html">Гарантия</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-    <div class="footer-social">
-      <b class="visually-hidden">Давайте дружить!</b>
+    <p class="text-footer">Тел.: +7(495)495-95-95</p>
+    <section class="footer-social">
+      <h2 class="visually-hidden">Социальные кнопки</h2>
       <ul>
         <li><img src="line.jpg" alt="Линия"></li>
         <li>
@@ -235,11 +227,11 @@
         <li>
           <a class="social-button" href="#">Твиттер</a>
         </li>
-        <li>
-          <a class="academy-button" href="#">HTML академия</a>
-        </li>
       </ul>
-    </div>
+      <ul>
+        <a class="html-logo" href="#">HTML академия</a>
+      </ul>
+      </div>
   </footer>
 
   <section class="modal modal-login">
@@ -254,4 +246,5 @@
     <span class="modal-close">x</span>
   </section>
 </body>
+
 </html>
