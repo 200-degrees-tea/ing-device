@@ -17,18 +17,69 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.site-navigation {
   font-size: 18px;
   line-height: 24px;
+  font-weight: bold;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
-.main-navigation {
+.site-navigation-sub {
+font-weight: normal;
+}
+
+.user-login-header,
+.user-compare-basket {
+  font-size: 15px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.site-navigation li,
+.user-login-header,
+.user-compare-basket,
+.main-footer,
+.product-list,
+.company-logo-img {
+  list-style: none
+}
+
+.site-navigation a,
+.user-login-header a,
+.user-compare-basket a {
+  color: #000000
+}
+
+.site-navigation a:focus,
+.user-login-header a:focus,
+.user-compare-basket a:focus {
+  opacity:0.3
+}
+
+.site-navigation a:hover,
+.user-login-header a:hover,
+.user-compare-basket a:hover {
+  opacity:0.6
+}
+
+
+
+.features-list {
   list-style: none;
 }
 
-main-navigation a {
-  color: #000000;
+.slider-controls,
+.product {
+  text-align: center;
+}
+
+
+
+.main-footer{
+  color: white;
+  background-color: #464646
+}
+
+.main-footer a{
+  color: white
 }
