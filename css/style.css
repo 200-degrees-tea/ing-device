@@ -22,6 +22,7 @@ a {
   line-height: 24px;
   font-weight: bold;
   color: #000000;
+  background-color: #f7e296;
 }
 
 .site-navigation-sub {
@@ -40,7 +41,12 @@ font-weight: normal;
 .user-compare-basket,
 .main-footer,
 .product-list,
-.company-logo-img {
+.company-logo-img,
+.main-footer ul,
+.breadcrumbs,
+.sort ul,
+.filters ul,
+.catalog-content ul {
   list-style: none
 }
 
@@ -62,8 +68,6 @@ font-weight: normal;
   opacity:0.6
 }
 
-
-
 .features-list {
   list-style: none;
 }
@@ -73,7 +77,44 @@ font-weight: normal;
   text-align: center;
 }
 
+.slide-item-selfi h2{
+  font-size: 47px;
+  line-height: 56px;
+}
 
+.service-slide h2{
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.about-us h2,
+.contacts h2{
+  font-size: 47px;
+  line-height: 48px;
+}
+
+button {
+  font:inherit;
+
+  text-align: center;
+  color: black;
+  vertical-align: middle;
+  font-weight: bold;
+
+  background-color: #f4d361;
+  border: none;
+}
+
+.button hover{
+  background-color: #f4d361;
+}
+.button focus{
+  opacity: 0.3;
+}
+.button :active {
+  background-color: black;
+  color: #f4d361;
+}
 
 .main-footer{
   color: white;
