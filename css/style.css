@@ -1,39 +1,37 @@
 body {
-  margin: 0;
-  padding: 0;
-
-  font-family: "myriad-pro", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 10px;
-  color: #000000;
-
-  background-color: #ffffff;
-  background-position: top center;
-  background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: "myriad-pro", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .site-navigation {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #000000;
-  background-color: #f7e296;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f7e296;
 }
 
 .site-navigation-sub {
-font-weight: normal;
+    font-weight: normal;
 }
 
 .user-login-header,
 .user-compare-basket {
-  font-size: 15px;
-  line-height: 30px;
-  color: #000000;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000000;
 }
 
 .site-navigation li,
@@ -47,80 +45,96 @@ font-weight: normal;
 .sort ul,
 .filters ul,
 .catalog-content ul {
-  list-style: none
+    list-style: none
 }
 
 .site-navigation a,
 .user-login-header a,
-.user-compare-basket a {
-  color: #000000
+.user-compare-basket a,
+.catalog-content a,
+.sort a,
+.container a {
+    color: #000000
 }
 
 .site-navigation a:focus,
 .user-login-header a:focus,
 .user-compare-basket a:focus {
-  opacity:0.3
+    opacity: 0.3
 }
 
 .site-navigation a:hover,
 .user-login-header a:hover,
 .user-compare-basket a:hover {
-  opacity:0.6
+    opacity: 0.6
 }
 
 .features-list {
-  list-style: none;
+    list-style: none;
 }
 
 .slider-controls,
 .product {
-  text-align: center;
+    text-align: center;
 }
 
-.slide-item-selfi h2{
-  font-size: 47px;
-  line-height: 56px;
+.slide-item-selfi h2 {
+    font-size: 47px;
+    line-height: 56px;
 }
 
-.service-slide h2{
-  font-size: 47px;
-  line-height: 48px;
+.service-slide h2 {
+    font-size: 47px;
+    line-height: 48px;
 }
 
 .about-us h2,
-.contacts h2{
-  font-size: 47px;
-  line-height: 48px;
+.contacts h2 {
+    font-size: 47px;
+    line-height: 48px;
 }
 
 button {
-  font:inherit;
-
-  text-align: center;
-  color: black;
-  vertical-align: middle;
-  font-weight: bold;
-
-  background-color: #f4d361;
-  border: none;
+    font: inherit;
+    text-align: center;
+    color: black;
+    vertical-align: middle;
+    font-weight: bold;
+    background-color: #f4d361;
+    border: none;
 }
 
-.button hover{
-  background-color: #f4d361;
+.button hover {
+    background-color: #f4d361;
 }
-.button focus{
-  opacity: 0.3;
+
+.button focus {
+    opacity: 0.3;
 }
+
 .button :active {
-  background-color: black;
-  color: #f4d361;
+    background-color: black;
+    color: #f4d361;
 }
 
-.main-footer{
-  color: white;
-  background-color: #464646
+.catalog-content a {
+    text-align: left;
 }
 
-.main-footer a{
-  color: white
+.catalog-item-price {
+    color: #464646;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.range-price {}
+
+.main-footer {
+    color: white;
+    background-color: #464646
+}
+
+.main-footer a {
+    color: white
 }
