@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>Device</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/afg0hvf.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="50" height="150" alt="Логотип DEVICE">
+        <img src="img/logo.png" alt="Логотип DEVICE">
       </a>
       <div class="search-header">
         <input type="search" name="search-user" placeholder="Поиск по сайту">
@@ -25,7 +29,7 @@
       <ul class="site-navigation">
         <li>
           <a href="catalog.html">Каталог товаров</a>
-          <ul>
+          <ul class="site-navigation-sub">
             <li><a href="#">Очки виртуальной реальности</a></li>
             <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
@@ -36,7 +40,7 @@
         </li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="№">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -54,11 +58,12 @@
         <label for="slide-item-quadro">Квадрокоптеры</label>
       </div>
       <section class="slide-item-selfi">
-        <img src="slide1.jpg" alt="Селфи палки">
+        <img src="img/slider-1.png" alt="Селфи палки">
+        <img src="img/01.png">
         <h2>Делай селфи, как Бен Стиллер</h2>
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
           всего 5 килограмм.</p>
-        <a class="button" href="more.html">Подробнее</a>
+          <button class="button" href="more.html">Подробнее</button>
         <table class="slide-item-charecteristics">
           <tr>
             <td>8,5 м</td>
@@ -79,10 +84,10 @@
         <p>Материал</p>
       </section>
       <section class="slide-item-watch">
-        <img src="slide2.jpg" alt="Умные часы">
+        <img src="img/slider-2.png" alt="Умные часы">
         <h2>Худеем правильно!</h2>
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-        <a class="button" href="more.html">Подробнее</a>
+        <button class="button" href="more.html">Подробнее</button>
         <table class="slide-item-charecteristics">
           <tr>
             <td>48 часов</td>
@@ -91,14 +96,13 @@
             <th>Без подзарядки</th>
           </tr>
         </table>
-
       </section>
       <section class="slide-item-quadro">
-        <img src="slide3.jpg" alt="Квадрокоптеры">
+        <img src="img/slider-3.png" alt="Квадрокоптеры">
         <h2>Порхает как бабочка, жалит как пчела</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскерованным под стандартную
           камеру</p>
-        <a class="button" href="more.html">Подробнее</a>
+        <button class="button" href="more.html">Подробнее</button>
         <table class="slide-item-charecteristics">
           <tr>
             <td>800 м</td>
@@ -116,37 +120,37 @@
       <ul class="product-list">
         <li>
           <a href="#">
-            <img src="img/virtreal.jpg" alt="Виртуальная реальность">
+            <img src="img/popular-1.png" alt="Виртуальная реальность">
             <span>Виртуальная реальность</span>
           </a>
         </li>
         <li>
           <a href="selfies-monopods.html">
-            <img src="img/selfmono.jpg" alt="Моноподы для селфи">
+            <img src="img/popular-2.png" alt="Моноподы для селфи">
             <span>Моноподы для селфи</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/actcam.jpg" alt="Экшн-камеры">
+            <img src="img/popular-3.png" alt="Экшн-камеры">
             <span>Экшн-камеры</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/fitbrac.jpg" alt="Фитнес-браслеты">
+            <img src="img/popular-4.png" alt="Фитнес-браслеты">
             <span>Фитнес-браслеты</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/smartwatch.jpg" alt="Умные часы">
+            <img src="img/popular-5.png" alt="Умные часы">
             <span>Умные часы</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <img src="img/quadro.jpg" alt="Квадрокоптеры">
+            <img src="img/popular-6.png" alt="Квадрокоптеры">
             <span>Квадрокоптеры</span>
           </a>
         </li>
@@ -164,19 +168,19 @@
         <label for="credit">Кредит</label>
       </div>
       <section class="service-slide-delivery">
-        <img src="delivery.jpg" alt="Доставка">
+        <img src="img/delivery.png" alt="Доставка">
         <h2>Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
           работаем, поднимая его на ваш этаж</p>
       </section>
       <section class="service-slide-waranty">
-        <img src="warranty.jpg" alt="Гарантия">
+        <img src="img/warranty.png" alt="Гарантия">
         <h2>Гарантия</h2>
         <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
           новый.Товар, не дом, конечно же.</p>
       </section>
       <section class="service-slide-credit">
-        <img src="credit.jpg" alt="Кредит">
+        <img src="img/credit.png" alt="Кредит">
         <h2>Кредит</h2>
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
           кредита. Выгодные для нашего банка, разумеется.</p>
@@ -185,10 +189,10 @@
     <section class="company-logo">
       <h2 class="visually-hidden">Логотипы компаний</h2>
       <ul class="company-logo-img">
-        <li><img src="img/dj" alt="dj"></li>
-        <li><img src="img/sp" alt="Sp Gadgets"></li>
-        <li><img src="img/gopro" alt="GoPro"></li>
-        <li><img src="img/vive" alt="VIVE"></li>
+        <li><img src="img/dji.png" alt="dj"></li>
+        <li><img src="img/sp.png" alt="Sp Gadgets"></li>
+        <li><img src="img/gopro.png" alt="GoPro"></li>
+        <li><img src="img/vive.png" alt="VIVE"></li>
       </ul>
     </section>
     <section class="about-us">
@@ -201,19 +205,19 @@
         <li><b>Автотрейдинг</b></li>
         <li><b>ЖелДорЭкспедиция</b></li>
       </ul>
-      <button class="button">Подробнее о нас</button>
+      <button class="button">О нас</button>
     </section>
     <section class="contacts">
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш оффис. Заодно вы сможете проверить работоспособность покупки.
         Всякое бывает</p>
-      <img src="img/map.jpg" width="100" height="150" alt="Карта">
+      <img src="img/map.jpg" alt="Карта">
       <button class="button">Напишите нам</button>
     </section>
   </main>
   <footer class="main-footer">
-    <ul class=user-navigation>
-      <li>><a><img src="img/index-logo-2.svg" width="50" height="150" alt="Логотип DEVICE"></a></li>
+    <ul class="user-navigation">
+      <li><a><img src="img/logo-2.png" alt="Логотип DEVICE"></a></li>
     </ul>
     <ul class="user-login-footer">
       <li><a href="#">Войти</a></li>
@@ -232,19 +236,19 @@
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные кнопки</h2>
       <ul>
-        <li><img src="line.jpg" alt="Линия"></li>
+        <li><img src="img/line.jpg" alt="Линия"></li>
         <li>
-          <a class="social-button" href="#">Фейсбук</a>
+          <a class="social-button" href="#"><img src="img/fb.png">Фейсбук</a>
         </li>
         <li>
-          <a class="social-button" href="#">Инстаграм</a>
+          <a class="social-button" href="#"><img src="img/in.png">Инстаграм</a>
         </li>
         <li>
-          <a class="social-button" href="#">Твиттер</a>
+          <a class="social-button" href="#"><img src="img/tw.png">Твиттер</a>
         </li>
       </ul>
       <div>
-        <a class="html-logo" href="#">HTML академия</a>
+        <a class="html-logo" href="#"><img src="img/logo-html.png">HTML академия</a>
       </div>
     </section>
   </footer>
@@ -259,6 +263,32 @@
     <!-- Здесь будет форма карты -->
     <span class="modal-close">x</span>
   </section>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+        </p>
+        <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <p class="login-password-info">
+            <label class="login-checkbox">
+                <input type="checkbox" name="remember" class="visually-hidden">
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button" type="submit">Войти</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+</section>
+
 </body>
 
 </html>
