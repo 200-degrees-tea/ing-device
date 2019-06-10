@@ -143,6 +143,14 @@ button {
     background: #e5e5e5;
 }
 
+.container-footer-2 li {
+    display: inline;
+}
+
+.container-footer-3 li {
+    display: inline;
+}
+
 
 /*--------сеточные стили--------*/
 
@@ -191,6 +199,8 @@ body {
 .main-header-logo {
     width: 164px;
     height: 36px;
+    padding: 0 60px;
+    margin-right: auto;
 }
 
 .site-navigation {
@@ -288,4 +298,25 @@ body {
 
 .contacts {
     width: 560px;
+}
+
+.main-footer .container {
+    display: flex;
+    padding: 65px 0;
+    margin-top: 65px;
+}
+
+.container-footer-1 {
+    width: 200px;
+    margin-right: 160px;
+}
+
+.container-footer-2 {
+    width: 440;
+    margin-top: 140px;
+}
+
+.container-footer-3 {
+    width: 325;
+    margin-left: auto;
 }
