@@ -19,12 +19,13 @@
         text-decoration: none;
     }
 
-    .site-navigation {
+    .site-navigation,
+    .user-info,
+    .user-contact {
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
         color: #000000;
-        background-color: #f7e296;
     }
 
     .site-navigation-sub {
@@ -48,7 +49,9 @@
     .breadcrumbs,
     .sort ul,
     .filters ul,
-    .catalog-content ul {
+    .catalog-content ul,
+    .user-info li,
+    .user-contact li {
         list-style: none
     }
 
@@ -63,13 +66,17 @@
 
     .site-navigation a:focus,
     .user-login-header a:focus,
-    .user-compare-basket a:focus {
+    .user-compare-basket a:focus,
+    .user-info a:focus,
+    .user-contact a:focus {
         opacity: 0.3
     }
 
     .site-navigation a:hover,
     .user-login-header a:hover,
-    .user-compare-basket a:hover {
+    .user-compare-basket a:hover,
+    .user-info a:hover,
+    .user-contact a:hover {
         opacity: 0.6
     }
 
@@ -132,11 +139,26 @@
         line-height: 24px;
     }
 
-    .range-price {}
+    .search-header,
+    .user-login-header,
+    .user-compare-basket {
+        color: black;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 30px;
+    }
 
     .main-footer {
         color: white;
-        background-color: #464646
+        font-weight: normal;
+        background-color: #464646;
+    }
+
+    .container-footer-2 a {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        display: inline;
     }
 
     .main-footer a {
@@ -144,138 +166,162 @@
     }
 
     .service-slide {
-        background: #e5e5e5;
-    }
-
-    .container-footer-2 li {
-        display: inline;
-    }
-
-    .container-footer-3 li {
-        display: inline;
-    }
-
-    .sort li,
-    .sort ul {
-        display: inline;
-    }
-
-    .container-catalog li {
-        display: inline;
+        background-color: #e5e5e5;
     }
     /*--------сеточные стили--------*/
 
     html,
     body {
-        min-width: 1122px;
-        min-height: 1750px;
-    }
-
-    .container {
-        width: 1040px;
-        margin-top: -110px;
-        padding: 0 60px;
+        min-width: 1160px;
+        min-height: 2750px;
     }
 
     .main-header {
+        width: 1160px;
         min-height: 300px;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: #f7e296;
     }
 
     .main-navigation {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        min-height: 339px;
-        background-color: transparent;
-    }
-
-    .user-navigation-wrapper {
-        width: 100%;
-        margin-bottom: 55px;
-        min-height: 70px;
-    }
-
-    .site-navigation {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .user-navigation-wrapper .container,
-    .user-compare-basket {
-        display: flex;
-        justify-content: space-between;
+        min-height: 300px;
+        /*задаем вид в колонны*/
     }
 
     .main-header-logo {
         width: 164px;
         height: 36px;
-        padding: 0 60px;
-        margin-right: auto;
+        margin-top: -20px;
+        margin-left: 60px;
+        margin-bottom: 35px;
     }
+    /*--------поиск, войти, сравнить, корзина--------*/
 
-    .site-navigation {
+    .container {
         width: 1160px;
-        margin: 0;
-        padding: 0;
-        min-height: 70px;
-    }
-
-    .user-navigation {
-        margin: 0;
-        padding: 0;
-        min-height: 70px;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     .search-header {
-        margin: 0;
+        width: 200px;
         padding: 0;
-        min-height: 70px;
     }
 
     .user-login-header {
+        width: 80px;
+        padding-left: 240px;
         margin: 0;
-        padding: 0;
-        min-height: 70px;
     }
 
     .user-compare-basket {
+        width: 220px;
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .user-compare-basket li {
+        display: inline;
+    }
+
+    .user-navigation-wrapper-1 {
+        width: 100%;
+        margin-bottom: 50px;
+        min-height: 18px;
+    }
+
+    .user-navigation-wrapper-1 .container {
+        display: flex;
+    }
+
+    .user-navigation-wrapper-2 .container {
+        display: flex;
+    }
+
+    .site-navigation {
+        width: 300px;
         margin: 0;
         padding: 0;
-        min-height: 70px;
+    }
+
+    .user-info {
+        width: 280px;
+        padding-left: 240px;
+        margin: 0;
+    }
+
+    .user-info li {
+        display: inline;
+    }
+
+    .user-contact {
+        width: 120 px;
+        padding-right: 0;
+        margin: 0;
+    }
+    /*основная страница сайта*/
+
+    .container-slide {
+        width: 1000px;
+        padding-left: 100px;
+        margin-top: -200px;
     }
 
     .product {
         margin-bottom: 85px;
+        width: 1160px;
+        padding: 0 20px;
+        min-height: 240px;
+        list-style: none;
+        margin-bottom: 90px;
     }
 
-    .product-list {
+    .product .product-list {
         display: flex;
         justify-content: space-between;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        min-height: 240px;
     }
 
     .product-list li {
         width: 160px;
         min-height: 240px;
+        margin: 0;
+        padding: 0;
     }
+    /*сервисный слайд*/
 
     .service-slide {
         display: flex;
         justify-content: space-between;
-        padding: 175 0;
+        padding: 75px 20px;
+        margin: 0;
+        width: 1160px;
     }
 
     .service-slide-controls {
-        padding: 85 0;
-        width: 320px;
+        padding: 0;
+        margin: 0;
+        width: 280px;
+        min-height: 320px;
     }
 
     .service-slide-colums {
-        padding: 85 120;
+        min-height: 320px;
+        padding-left: 100px;
+        margin: 0;
         width: 700px;
+    }
+    /*лого рекламных компаний*/
+
+    .company-logo {
+        width: 1160px;
+        padding-top: 105px;
+        padding-left: 20px;
+        min-height: 55px;
+        padding-bottom: 110px;
     }
 
     .company-logo-img {
@@ -287,19 +333,11 @@
         min-height: 55px;
     }
 
-    .company-logo {
-        padding: 95 0;
-    }
-
-    .company-logo-img li {
-        width: 260px;
-        min-height: 55px;
-    }
-
     .index-columns {
         display: flex;
         justify-content: space-between;
-        padding: 95px 0px;
+        padding-left: 20px;
+        width: 1160px;
     }
 
     .about-us {
@@ -308,27 +346,41 @@
 
     .contacts {
         width: 560px;
+        padding-right: 20px;
     }
+    /* меню подвала*/
 
     .main-footer .container {
         display: flex;
-        padding: 65px 0;
         margin-top: 65px;
     }
 
     .container-footer-1 {
-        width: 200px;
-        margin-right: 160px;
+        width: 260px;
+        margin: 0;
+        padding: 0;
+        margin-top: 70px;
     }
 
     .container-footer-2 {
-        width: 440;
+        width: 440px;
         margin-top: 140px;
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    .container-footer-2 li {
+        display: inline;
     }
 
     .container-footer-3 {
-        width: 330;
+        width: 360;
         margin-left: auto;
+        text-align: right;
+    }
+
+    .container-footer-3 li {
+        display: inline;
     }
     /*--------сеточные стили каталога (меню сайта)--------*/
     /*--------сеточные стили каталога (содержимое страницы)--------*/
