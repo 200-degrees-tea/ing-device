@@ -21,7 +21,8 @@
 
     .site-navigation,
     .user-info,
-    .user-contact {
+    .user-contact,
+    .product a {
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -60,7 +61,8 @@
     .user-compare-basket a,
     .catalog-content a,
     .sort a,
-    .container a {
+    .container a,
+    .product a {
         color: #000000
     }
 
@@ -68,7 +70,8 @@
     .user-login-header a:focus,
     .user-compare-basket a:focus,
     .user-info a:focus,
-    .user-contact a:focus {
+    .user-contact a:focus,
+    .product a:focus {
         opacity: 0.3
     }
 
@@ -76,7 +79,8 @@
     .user-login-header a:hover,
     .user-compare-basket a:hover,
     .user-info a:hover,
-    .user-contact a:hover {
+    .user-contact a:hover,
+    .product a:hover {
         opacity: 0.6
     }
 
@@ -172,8 +176,10 @@
 
     html,
     body {
-        min-width: 1160px;
+        width: 1160px;
         min-height: 2750px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-header {
@@ -214,7 +220,7 @@
 
     .user-login-header {
         width: 80px;
-        padding-left: 240px;
+        padding-left: 220px;
         margin: 0;
     }
 
@@ -226,20 +232,14 @@
 
     .user-compare-basket li {
         display: inline;
+        padding-left: 40px;
     }
 
-    .user-navigation-wrapper-1 {
+    .user-navigation-wrapper .container {
+        display: flex;
         width: 100%;
         margin-bottom: 50px;
         min-height: 18px;
-    }
-
-    .user-navigation-wrapper-1 .container {
-        display: flex;
-    }
-
-    .user-navigation-wrapper-2 .container {
-        display: flex;
     }
 
     .site-navigation {
@@ -250,12 +250,13 @@
 
     .user-info {
         width: 280px;
-        padding-left: 240px;
+        padding-left: 220px;
         margin: 0;
     }
 
     .user-info li {
         display: inline;
+        padding-left: 40px;
     }
 
     .user-contact {
@@ -264,32 +265,57 @@
         margin: 0;
     }
     /*основная страница сайта*/
+    /*слайдер*/
 
-    .container-slide {
-        width: 1000px;
-        padding-left: 100px;
-        margin-top: -200px;
+    .slide-item-selfi .container,
+    .slide-item-watch .container,
+    .slide-item-quadro .container {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-top: -100px;
     }
 
+    .slide-item-img {
+        width: 530px;
+        min-height: 490px;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        margin-right: 20px;
+    }
+
+    .slide-item-char {
+        width: 500px;
+        min-height: 490px;
+        margin: 0;
+        padding: 0;
+        margin-right: 60px;
+    }
+    /*популярные товары*/
+
     .product {
-        margin-bottom: 85px;
         width: 1160px;
-        padding: 0 20px;
-        min-height: 240px;
+        padding: 0;
         list-style: none;
         margin-bottom: 90px;
+    }
+
+    .product-back {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 35px;
+        background-color: #f7e296;
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .product .product-list {
         display: flex;
         justify-content: space-between;
-    }
-
-    .product-list li {
-        width: 160px;
-        min-height: 240px;
-        margin: 0;
-        padding: 0;
     }
     /*сервисный слайд*/
 
@@ -319,7 +345,7 @@
     .company-logo {
         width: 1160px;
         padding-top: 105px;
-        padding-left: 20px;
+        padding-left: 0px;
         min-height: 55px;
         padding-bottom: 110px;
     }
