@@ -168,10 +168,6 @@
     .main-footer a {
         color: white
     }
-
-    .service-slide {
-        background-color: #e5e5e5;
-    }
     /*--------сеточные стили--------*/
 
     html,
@@ -325,6 +321,7 @@
         padding: 75px 20px;
         margin: 0;
         width: 1160px;
+        background-color: #e5e5e5;
     }
 
     .service-slide-controls {
@@ -378,37 +375,45 @@
 
     .main-footer .container {
         display: flex;
+        width: 1160px;
         margin-top: 65px;
+        padding-top: 70px;
     }
 
     .container-footer-1 {
-        width: 260px;
+        width: 280px;
         margin: 0;
         padding: 0;
-        margin-top: 70px;
     }
 
     .container-footer-2 {
-        width: 440px;
-        margin-top: 140px;
+        width: 560px;
+        margin-top: 70px;
         padding-left: 100px;
         text-align: center;
     }
 
     .container-footer-2 li {
         display: inline;
+        margin-right: 25px;
     }
 
     .container-footer-3 {
         width: 360;
-        margin-left: auto;
+        margin-right: 20px;
         text-align: right;
     }
 
     .container-footer-3 li {
         display: inline;
+        margin-right: 25px;
     }
     /*--------сеточные стили каталога (меню сайта)--------*/
+
+    .user-login-header li {
+        display: inline;
+        margin-right: 20px;
+    }
     /*--------сеточные стили каталога (содержимое страницы)--------*/
 
     .user-columns-catalog {
@@ -454,23 +459,62 @@
         min-height: 25px;
     }
 
-    .sort {
-        padding: 0;
+    .breadcrumbs li {
+        display: inline;
+        margin-right: 50px;
+    }
+    /* шапка фильтров*/
+
+    .catalog-header {
+        display: flex;
         margin: 0;
-        margin-left: 270px;
+        padding: 0;
+        width: 1100px;
         min-height: 70px;
     }
+
+    .sort {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        min-height: 70px;
+        width: 830px;
+        padding-left: 75px
+    }
+
+    .sort li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    .filter-head {
+        padding: 0;
+        margin: 0;
+        min-height: 70px;
+        width: 270px;
+        padding-right: 180px;
+    }
+    /*сами фильтры*/
 
     .filters {
         margin: 0;
         padding: 0;
-        width: 200px;
+        width: 270px;
         min-height: 1075px;
+    }
+
+    .filters legend {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
     }
 
     .catalog-content {
         width: 800px;
         min-height: 1075px;
+        margin: 0;
+        padding: 0;
+        margin-top: 70px;
     }
 
     .catalog-body {
@@ -503,15 +547,32 @@
         display: flex;
     }
 
-    .catalog-header {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-    }
-
     .pagination-list {
         padding: 0;
         margin: 0;
         list-style: none;
+    }
+
+    .pagination-list li {
+        display: inline;
+    }
+
+    .pagination-list {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .pagination-item-back {
+        padding-right: 230px;
+    }
+
+    .pagination-item-next {
+        padding-left: 200px;
+    }
+
+    .pagination-item {
+        padding-right: 30px;
     }
     /*пока все)*/
