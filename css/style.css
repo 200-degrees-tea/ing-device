@@ -181,6 +181,15 @@
       background-color: #f7e296;
     }
 
+    .main-header-catalog {
+      width: 1160px;
+      height: 185px;
+      margin-top: 40px;
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: #f7e296;
+    }
+
     .main-navigation {
       display: flex;
       flex-direction: column;
@@ -199,7 +208,7 @@
     /*--------поиск, войти, сравнить, корзина--------*/
 
     .container {
-      width: 1160px;
+      width: 1200px;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -207,6 +216,8 @@
     .user-navigation-wrapper-1 .container {
       display: flex;
       width: 100%;
+      margin: 0;
+      padding: 0;
       margin-bottom: 50px;
       min-height: 25px;
     }
@@ -221,11 +232,21 @@
 
     .user-login-header {
       display: flex;
-      max-width: 80px;
+      width: 260px;
       padding: 0;
       margin: 0;
-      margin-left: 255px;
+      margin-left: 280px;
     }
+
+    .user-logout-header {
+      display: flex;
+      max-width: 260px;
+      padding: 0;
+      margin: 0;
+      margin-left: 265px;
+    }
+
+
 
     /* позиционирование картинки user*/
 
@@ -245,15 +266,37 @@
       background-position: 0 0;
     }
 
+    .user-login-header li{
+      display: inline;
+      margin-right: 20px;
+    }
+
+    .user-login-header .logout-link {
+      position: relative;
+    }
+
+    .logout-link::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: -20px;
+      width: 15px;
+      height: 15px;
+      background-image: url("img/user.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+
     /* позиционирование картинки compare-basket*/
 
     .user-compare-basket {
       display: flex;
       flex-wrap: wrap;
-      max-width: 220px;
+      max-width: 240px;
       margin: 0;
       padding: 0;
-      margin-left: 200px;
+      padding-left: 30px;
     }
 
     .user-compare-basket li {
@@ -465,16 +508,14 @@
       padding-right: 20px;
     }
 
-
     /* меню подвала*/
 
     .main-footer .container {
       display: flex;
       justify-content: center;
-
     }
 
-    .main-footer{
+    .main-footer {
       margin-top: 65px;
       padding-top: 70px;
       padding-right: 20px;
@@ -508,7 +549,7 @@
 
     .container-footer-3 li {
       display: inline;
-      margin-right: 0 auto ;
+      margin-right: 0 auto;
     }
 
     /*--------сеточные стили каталога (меню сайта)--------*/
@@ -556,8 +597,9 @@
       display: flex;
       margin: 0;
       padding: 0;
-      width: 1100px;
+      width: 1180px;
       min-height: 70px;
+      background-color: #ebebeb;
     }
 
     .sort {
@@ -565,8 +607,11 @@
       padding: 0;
       margin: 0;
       min-height: 70px;
-      width: 830px;
-      padding-left: 75px
+      width: 1100px;
+      background-color:#ebebeb;
+      margin-left: 75px;
+
+
     }
 
     .sort li {
@@ -577,24 +622,41 @@
     .filter-head {
       padding: 0;
       margin: 0;
+      padding-right: 65px;
+      padding-left: 10px;
       min-height: 70px;
-      width: 270px;
-      padding-right: 180px;
+      width: 330px;
+      background-color: #dcdcdc;
+
     }
 
     /*сами фильтры*/
 
     .filters {
+      display: flex;
+      flex-direction: column;
       margin: 0;
       padding: 0;
-      width: 270px;
-      min-height: 1075px;
+      min-width: 330px;
+      min-height: 1140px;
+      padding-top: 70px;
+      padding-left: 10px;
+
+
+      background-color:#ebebeb;
     }
 
     .filters legend {
       font-weight: bold;
       font-size: 18px;
       line-height: 24px;
+    }
+
+    .catalog-body {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
     }
 
     .catalog-content {
@@ -605,17 +667,18 @@
       margin-top: 70px;
     }
 
-    .catalog-body {
-      display: flex;
-      justify-content: space-between;
+    .catalog-content a{
+      padding-left: 40px;
     }
+
 
     .catalog-item {
       width: 360px;
-      margin-left: 20px;
-      margin-bottom: 75px;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
       margin-right: 20px;
-      min-height: 435px;
+      min-height: 440px;
     }
 
     .catalig-item :nth-child(3n) {
@@ -639,6 +702,11 @@
       padding: 0;
       margin: 0;
       list-style: none;
+      height: 60px;
+      max-width: 760px;
+      background-color: #ebebeb;
+      padding-top: 30px;
+      margin-left: 50px;
     }
 
     .pagination-list li {
@@ -653,15 +721,31 @@
     }
 
     .pagination-item-back {
-      padding-right: 230px;
+      padding-left: 30px;
     }
 
     .pagination-item-next {
-      padding-left: 200px;
+      padding-right: 30px;
     }
 
     .pagination-item {
       padding-right: 30px;
     }
 
-    /*пока все)*/
+    /*пока все)-----------------------------------*/
+
+    .site-navigation-sub{
+      visibility: hidden;
+      margin-top: 25px;
+      width: 560px;
+      height: 95px;
+    }
+
+    .site-navigation-sub li{
+      margin-top: 25px;
+    }
+
+    .site-navigation li:hover .site-navigation-sub{
+      visibility: visible;
+    }
+
