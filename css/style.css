@@ -149,7 +149,6 @@
     .main-footer {
       color: white;
       font-weight: normal;
-      background-color: #464646;
     }
 
     .container-footer-2 a {
@@ -167,7 +166,7 @@
 
     html, body {
       width: 1160px;
-      min-height: 2750px;
+      height: 2750px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -187,6 +186,7 @@
       margin-top: 40px;
       margin-left: 20px;
       margin-right: 20px;
+      margin-bottom: 25px;
       background-color: #f7e296;
     }
 
@@ -502,9 +502,8 @@
     .service-slide {
       display: flex;
       justify-content: space-between;
-      padding: 75px 20px;
-      margin: 0;
-      width: 1160px;
+      margin: 75px 20px;
+      width: 100%;
       background-color: #e5e5e5;
     }
 
@@ -575,11 +574,12 @@
       margin: 0;
       margin-bottom: 60px;
     }
-    .index-columns p{
-    font-size: 15px;
-    line-height: 30px;
-    color: #464646;
-  }
+
+    .index-columns p {
+      font-size: 15px;
+      line-height: 30px;
+      color: #464646;
+    }
 
     .contacts {
       width: 560px;
@@ -587,11 +587,9 @@
       padding-right: 20px;
     }
 
-
     .contacts p {
       margin: 0;
       margin-bottom: 45px;
-
     }
 
     .contacts img {
@@ -605,24 +603,26 @@
     .main-footer .container {
       display: flex;
       justify-content: center;
-    }
+      background-color: #464646;
+      height: 320px;
+      padding: 0;
+      margin: 0;
 
-    .main-footer {
-      margin-top: 65px;
-      padding-top: 70px;
-      padding-right: 20px;
     }
 
     .container-footer-1 {
-      width: 280px;
+      width: 380px;
       margin: 0;
       padding: 0;
+      padding-top: 65px;
+      padding-left: 20px;
+
     }
 
     .container-footer-2 {
-      width: 560px;
-      margin-top: 70px;
-      margin-left: 40px;
+      width: 440px;
+      padding-top: 140px;
+      margin: 0 auto;
       text-align: center;
     }
 
@@ -632,17 +632,36 @@
     }
 
     .container-footer-3 {
-      width: 400;
+      width: 380;
       margin: 0;
       padding: 0;
+      margin-right: 0 auto;
       text-align: right;
-      padding-right: 40px;
+      padding-top: 65px;
+      margin-right: 20px;
     }
 
     .container-footer-3 li {
       display: inline;
-      margin-right: 0 auto;
+      padding-left: 20px;
     }
+
+    .container-footer-33 {
+      width: 505px;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      padding-top: 65px;
+      padding-right: 20px;
+    }
+
+    .container-footer-33 li {
+      display: inline;
+      padding-left: 10px;
+    }
+
+
+
 
     /*--------сеточные стили каталога (меню сайта)--------*/
 
@@ -656,12 +675,6 @@
     .user-columns-catalog {
       display: flex;
       flex-direction: row;
-    }
-
-    .container-catalog {
-      width: 1040px;
-      margin-top: 55px;
-      padding: 0 60px;
     }
 
     .page-title {
@@ -689,9 +702,9 @@
       display: flex;
       margin: 0;
       padding: 0;
-      width: 1180px;
-      min-height: 70px;
-      background-color: #ebebeb;
+      width: 100%;
+
+
     }
 
     .sort {
@@ -699,22 +712,20 @@
       padding: 0;
       margin: 0;
       min-height: 70px;
-      width: 830px;
+        width: 852px;
       background-color: #ebebeb;
-      margin-left: 70px;
     }
 
     .sort li {
       display: inline;
-      margin-right: 20px;
+      padding-left: 25px;
     }
 
     .filter-head {
       padding: 0;
       margin: 0;
-      padding-left: 60px;
       min-height: 70px;
-      width: 270px;
+      min-width: 348px;
       background-color: #dcdcdc;
     }
 
@@ -725,11 +736,9 @@
       flex-direction: column;
       margin: 0;
       padding: 0;
-      width: 270px;
+      min-width: 348px;
       min-height: 1140px;
       padding-top: 70px;
-      padding-left: 60px;
-      padding-bottom: 70px;
       background-color: #ebebeb;
     }
 
@@ -744,14 +753,13 @@
       justify-content: space-between;
       margin: 0;
       padding: 0;
-      width: 855px;
+      width: 825px;
       min-height: 1075px;
 
     }
 
-
     .catalog-content a {
-      margin-left: 20px;
+      margin-left: 0 auto;
     }
 
     .catalog-item {
@@ -759,9 +767,14 @@
       min-height: 380px;
       margin: 0;
       padding: 0;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 40px;
+      margin-top: 70px;
 
+    }
+
+    .catalog-item-image{
+      margin: 0;
+      padding: 0;
     }
 
     .catalig-item :nth-child(3n) {
@@ -782,6 +795,7 @@
       width: 1160px;
       margin: 0;
       padding: 0;
+
     }
 
     .pagination-list {
@@ -818,27 +832,28 @@
       padding-right: 30px;
     }
 
-  /*стилизация шрифтов*/
-.catalog-content h3{
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
-  text-align: left;
-}
+    /*стилизация шрифтов*/
 
-.catalog-content p{
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-}
+    .catalog-content h3 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: left;
+    }
 
-.catalog-content img{
-  width: 360px;
-  height: 380px;
-}
+    .catalog-content p {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: right;
+    }
 
+    .catalog-content img {
+      width: 100%;
+      height: 100%;
+    }
 
-  /*cкрываем подменю*/
+    /*cкрываем подменю*/
+
     .site-navigation-sub {
       visibility: hidden;
       margin-top: 25px;
