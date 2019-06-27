@@ -173,8 +173,6 @@
       width: 100%;
       min-height: 300px;
       margin-top: 40px;
-      margin-left: 20px;
-      margin-right: 20px;
       background-color: #f7e296;
     }
 
@@ -387,6 +385,7 @@
 
     /*слайдер*/
 
+
     .slide-item-selfi .container, .slide-item-watch .container, .slide-item-quadro .container {
       display: flex;
       width: 100%;
@@ -396,21 +395,14 @@
     }
 
     .slide-item-img {
-      width: 530px;
-      min-height: 490px;
+      width: 560px;
+      min-height: 500px;
       margin: 0;
       padding: 0;
-      padding-left: 20px;
-      margin-right: 20px;
+      text-align: center;
     }
 
-    .slide-item-char {
-      width: 500px;
-      min-height: 490px;
-      margin: 0;
-      padding: 0;
-      margin-right: 60px;
-    }
+
 
     .slide-item-charecteristics td {
       padding-right: 60px;
@@ -431,10 +423,14 @@
     .slide-item-selfi h2::before {
       content: "01";
       position: absolute;
+      width: 180px;
+      height: 180px;
       font-size: 180px;
-      color: rgb(255, 255, 255);
-      bottom: 90px;
-      right: -50px;
+      font-weight: 180px;
+      color: white;
+      bottom: -25px;
+      right: -100px;
+      z-index: -1;
     }
 
     .slide-item-watch h2 {
@@ -444,10 +440,14 @@
     .slide-item-watch h2::before {
       content: "02";
       position: absolute;
+      width: 180px;
+      height: 180px;
       font-size: 180px;
-      color: rgb(97, 97, 97);
-      bottom: 90px;
-      right: -50px;
+      font-weight: 180px;
+      color: white;
+      bottom: -25px;
+      right: -100px;
+      z-index: -1;
     }
 
     .slide-item-quadro h2 {
@@ -457,10 +457,101 @@
     .slide-item-quadro h2::before {
       content: "03";
       position: absolute;
+      width: 180px;
+      height: 180px;
       font-size: 180px;
-      color: rgb(0, 0, 0);
-      bottom: 140px;
-      right: -50px;
+      font-weight: 180px;
+      color: white;
+      bottom: -25px;
+      right: -100px;
+      z-index: -1;
+    }
+
+    /*пытаемся сделать сам слайдер*/
+
+    .slider {
+      height: 500px;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      margin-bottom: 110px;
+    }
+
+    .slide-item {
+      display: none;
+    }
+
+    .slider-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .slide-item h2 {
+      max-width: 500px;
+      min-height: 105px;
+      margin: 0;
+      margin-bottom: 40px;
+      margin-top: 65px;
+      font-size: 47px;
+      line-height: 56px;
+      z-index: 100;
+    }
+
+    .slide-item p {
+      max-width: 480px;
+      min-height: 50px;
+      margin: 0;
+      margin-bottom: 60px;
+      margin-top: 40px;
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    .slider-controls label {
+      position: relative;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 11px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider-controls label::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #000000;
+      position: absolute;
+      left: 3px;
+      bottom: 3px;
+      border-radius: 50%;
+    }
+
+    .slider-controls {
+      position: absolute;
+      left: 80%;
+      bottom: 110px;
+      width: 85px;
+      height: 12px;
+      text-align: center;
+      font-size: 0;
+    }
+
+    .slider-controls .activ::before {}
+
+    #slide-item-selfi:checked~.slider-list #slide1, #slide-item-watch:checked~.slider-list #slide2, #slide-item-quadro:checked~.slider-list #slide3 {
+      display: block;
+    }
+
+    #slide-item-selfi:checked~.slider-controls label[for="slide-item-selfi"], #slide-item-watch:checked~.slider-controls label[for="slide-item-watch"], #slide-item-quadro:checked~.slider-controls label[for="slide-item-quadro"] {
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      height: 16px;
+      width: 16px;
+
     }
 
     /*популярные товары*/
@@ -791,7 +882,6 @@
       width: 200px;
     }
 
-
     fieldset {
       border: none;
       margin: 0;
@@ -809,9 +899,7 @@
       height: 2px;
       background-color: black;
       bottom: 60px;
-
     }
-
 
     .catalog-body {
       display: flex;
@@ -969,3 +1057,4 @@
     .site-navigation li:hover .site-navigation-sub {
       visibility: visible;
     }
+
