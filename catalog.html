@@ -9,20 +9,19 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-
 <div class="container">
   <header class="main-header-catalog">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo.png" alt="Логотип DEVICE">
       </a>
-      <div class="user-navigation-wrapper-1">
-        <div class="container">
-          <div class="search-header">
-            <div class="search-link">
-              <input type="search" name="search-user" placeholder="Поиск по сайту">
-            </div>
+      <div class="user-navigation-wrapper">
+        <div class="search-header">
+          <div class="search-link">
+            <input type="search" name="search-user" placeholder="Поиск по сайту">
           </div>
+        </div>
+        <div class="container-half">
           <ul class="user-login-header">
             <li><a class="logout-link" href="#">Валентин Петухов</a></li>
             <li><a href="#">Выйти</a></li>
@@ -33,30 +32,25 @@
           </ul>
         </div>
       </div>
-      <div class="user-navigation-wrapper-2">
-        <div class="container">
-          <ul class="site-navigation">
-            <li>
-              <a href="catalog.html">Каталог товаров</a>
-              <ul class="site-navigation-sub">
-                <li><a href="#">Очки виртуальной реальности</a></li>
-                <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </li>
+
+      <ul class="site-navigation">
+        <li>
+          <a href="catalog.html">Каталог товаров</a>
+          <ul class="site-navigation-sub">
+            <li><a href="#">Очки виртуальной реальности</a></li>
+            <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптеры</a></li>
           </ul>
-          <ul class="user-info">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-          </ul>
-          <ul class="user-contact">
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
+        </li>
+        <ul class="container-half">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </ul>
     </nav>
   </header>
 </div>
@@ -64,7 +58,7 @@
 <body>
   <main class="container-main">
     <div class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
+      <h1>Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
@@ -78,7 +72,7 @@
       </div>
       <div class="sort">
         <h2>Сортировка</h2>
-        <ul>
+        <ul class="sort-type">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
@@ -93,13 +87,11 @@
     <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <div class="line">
-          <form class="range-price" onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-            <legend>Стоимость</legend>
-            <input name="flevel" id="flying" type="range" min="0" max="10000" value="5000" step="500">
-            <output for="flying" name="level">5000</output>
-          </form>
-        </div>
+        <form class="range-price" onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+          <legend>Стоимость</legend>
+          <input name="flevel" id="flying" type="range" min="0" max="10000" value="5000" step="500">
+          <output for="flying" name="level">5000</output>
+        </form>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Цвет</legend>
@@ -228,51 +220,53 @@
 
 
   <footer class="main-footer">
-
-    <ul class="container-footer-1">
-      <li>
-        <a><img src="img/logo-2.png" alt="Логотип DEVICE"></a>
-      </li>
-      <li>
-        <address>г. Москва, ул. Строителей, 15</address>
-      </li>
-      <li><img src="img/line.jpg" alt="Линия"></li>
-    </ul>
-
-    <div class="container-footer-2">
-      <ul>
-        <li><a href="#.html">Доставка</a></li>
-        <li><a href="#.html">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+    <div class="container-footer">
+      <ul class="container-footer-1">
+        <li>
+          <a><img src="img/logo-2.png" alt="Логотип DEVICE"></a>
+        </li>
+        <li>
+          <address>г. Москва, ул. Строителей, 15</address>
+        </li>
+        <li><img src="img/line.jpg" alt="Линия"></li>
       </ul>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные кнопки</h2>
+
+      <div class="container-footer-2">
         <ul>
-          <li>
-            <a class="social-button" href="#"><img src="img/fb.png"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/in.png"></a>
-          </li>
-          <li>
-            <a class="social-button" href="#"><img src="img/tw.png"></a>
-          </li>
+          <li><a href="#.html">Доставка</a></li>
+          <li><a href="#.html">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-      </section>
-    </div>
-    <div class="container-footer-33">
-      <ul class="user-footer">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные кнопки</h2>
+          <ul>
+            <li>
+              <a class="social-button" href="#"><img src="img/fb.png"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/in.png"></a>
+            </li>
+            <li>
+              <a class="social-button" href="#"><img src="img/tw.png"></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <ul class="user">
         <li><a href="#">Валентин Петухов</a></li>
-        <li><a href="#">Выйти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
       </ul>
-      <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-      <div>
-        <a class="html-logo" href="#"><img src="img/logo-html.png">HTML академия</a>
+      <div class="container-footer-3">
+        <ul class="user-footer">
+          <li><a href="#">Выйти</a></li>
+          <li><a href="#">Сравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>
+        <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+        <div>
+          <a class="html-logo" href="#"><img src="img/logo-html.png"></a>
+        </div>
       </div>
     </div>
-
   </footer>
 </body>
 
