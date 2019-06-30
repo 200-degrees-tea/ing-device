@@ -438,7 +438,6 @@
 
     .slider {
       margin: 0 auto;
-      padding: 0;
       position: relative;
       margin-bottom: 110px;
     }
@@ -789,8 +788,6 @@
     .range-price {
       width: 270px;
       height: 170px;
-      padding: 0;
-      margin: 0;
       margin-left: auto;
     }
 
@@ -856,19 +853,12 @@
     }
 
     .catalog-item {
-      width: 360px;
-      min-height: 380px;
-      margin: 0;
-      padding: 0;
       margin-left: 40px;
       margin-top: 70px;
     }
 
     .item-container {
       display: flex;
-      margin: 0;
-      padding: 0;
-      width: 360px;
     }
 
     .catalog-body h3 {
@@ -927,23 +917,15 @@
     }
 
     .pagination-item-back {
-      width: 75px;
-      margin: 0;
-      padding: 0;
       margin-left: 35px;
     }
 
     .pagination-item-next {
-      width: 80px;
-      margin: 0;
-      padding: 0;
       padding-right: 25px;
     }
 
     .pagination-number {
       width: 440px;
-      margin: 0;
-      padding: 0;
       margin-left: 60px;
       margin-right: 55px;
       text-align: center;
