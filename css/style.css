@@ -517,7 +517,7 @@
       justify-content: space-between;
       margin: 0;
       padding: 0;
-      margin-bottom: 90px;
+      margin-bottom: 150px;
     }
 
     .product-list li {
@@ -535,24 +535,130 @@
 
     /*сервисный слайд*/
 
+    .service-container {
+      background-color: #e5e5e5;
+      height: 290px;
+    }
+
+
     .service-slide {
       display: flex;
-      justify-content: center;
-      margin-top: 75px;
-      margin-bottom: 75px;
-      width: 100%;
-      background-color: #e5e5e5;
+      justify-content: space-evenly;
+
     }
 
     .service-slide-controls {
       display: flex;
       flex-direction: column;
-      width: 30%;
-      text-align: center;
+      width: 20%;
+      padding-top: 50px;
+      margin-top: -70px;
     }
 
     .service-slide-colums {
       width: 70%;
+      margin-top: -70px;
+    }
+
+    /*сам слайдер сервиса*/
+
+    .slide-item-serv {
+      display: none;
+      margin-left: 100px;
+    }
+
+    .slide-item-serv p {
+      width: 455px;
+    }
+
+    .delivery p {
+      position: relative;
+    }
+
+    .delivery p::before {
+      content: "";
+      position: absolute;
+      right: -180px;
+      width: 155px;
+      height: 180px;
+      top: -70px;
+      background-image: url("img/delivery.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .warranty p {
+      position: relative;
+    }
+
+    .warranty p::before {
+      content: "";
+      position: absolute;
+      right: -180px;
+      width: 185px;
+      height: 200px;
+      top: -70px;
+      background-image: url("img/warranty.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .credit p {
+      position: relative;
+    }
+
+    .credit p::before {
+      content: "";
+      position: absolute;
+      right: -180px;
+      width: 175px;
+      height: 200px;
+      top: -70px;
+      background-image: url("img/credit.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+
+    .service-slide-controls label {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      text-align: left;
+      padding-left 25px;
+      margin-bottom: 35px;
+      background-color: #f4d361;
+
+    }
+
+    .service-slide-controls .activ::before {}
+
+    #delivery:checked~.service-slide-colums #slide-serv1, #warranty:checked~.service-slide-colums #slide-serv2, #credit:checked~.service-slide-colums #slide-serv3 {
+      display: block;
+    }
+
+    #delivery:checked~.service-slide-controls label[for="delivery"], #warranty:checked~.service-slide-controls label[for="warranty"], #credit:checked~.service-slide-controls label[for="credit"] {
+      background-color: #000000;
+
+      color: #f7e184;
+      text-align: left;
+      padding: 15px 0;
+      padding-left: 40px;
+    }
+
+    .service-slide-controls {
+      position: relative;
+    }
+
+    .service-slide-controls::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 320px;
+      top: -10px;
+      right: -5px;
+      background-color: black;
+      background-repeat: no-repeat;
+      background-position: 0 0;
     }
 
     /*лого рекламных компаний*/
@@ -762,7 +868,7 @@
       justify-content: center;
       flex-basis: 45%;
       display: flex;
-      }
+    }
 
     .up-down {
       display: flex;

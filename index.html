@@ -195,36 +195,40 @@
     </section>
   </div>
   <h2 class="visually-hidden">Сервисный слайд</h2>
-  <section class="service-slide">
-    <input type="radio" id="delivery" name="service" checked>
-    <input type="radio" id="warranty" name="service">
-    <input type="radio" id="credit" name="service">
-
-    <div class="service-slide-controls">
-      <label for="delivery">Доставка</label>
-      <label for="warranty">Гарантия</label>
-      <label for="credit">Кредит</label>
-    </div>
-    <div class="service-slide-colums">
-      <section class="service-slide-delivery">
-        <img src="img/delivery.png" alt="Доставка">
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-          работаем, поднимая его на ваш этаж</p>
-      </section>
-      <section class="service-slide-waranty">
-        <img src="img/warranty.png" alt="Гарантия">
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
-          новый.Товар, не дом, конечно же.</p>
-      </section>
-      <section class="service-slide-credit">
-        <img src="img/credit.png" alt="Кредит">
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
-          кредита. Выгодные для нашего банка, разумеется.</p>
-      </section>
-  </section>
+  <div class="service-container">
+    <section class="service-slide">
+      <input class="visually-hidden" type="radio" id="delivery" name="service" checked>
+      <input class="visually-hidden" type="radio" id="warranty" name="service">
+      <input class="visually-hidden" type="radio" id="credit" name="service">
+      <div class="service-slide-controls">
+        <label for="delivery">Доставка</label>
+        <label for="warranty">Гарантия</label>
+        <label for="credit">Кредит</label>
+      </div>
+      <div class="service-slide-colums">
+        <div class="slide-item-serv" id="slide-serv1">
+          <section class="delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+              работаем, поднимая его на ваш этаж</p>
+          </section>
+        </div>
+        <div class="slide-item-serv" id="slide-serv2">
+          <section class="warranty">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+              новый.Товар, не дом, конечно же.</p>
+          </section>
+        </div>
+        <div class="slide-item-serv" id="slide-serv3">
+          <section class="credit">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+              кредита. Выгодные для нашего банка, разумеется.</p>
+          </section>
+        </div>
+    </section>
+  </div>
 
   <section class="company-logo">
     <h2 class="visually-hidden">Логотипы компаний</h2>
