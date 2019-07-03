@@ -540,11 +540,9 @@
       height: 290px;
     }
 
-
     .service-slide {
       display: flex;
       justify-content: space-evenly;
-
     }
 
     .service-slide-controls {
@@ -627,7 +625,6 @@
       padding-left 25px;
       margin-bottom: 35px;
       background-color: #f4d361;
-
     }
 
     .service-slide-controls .activ::before {}
@@ -638,7 +635,6 @@
 
     #delivery:checked~.service-slide-controls label[for="delivery"], #warranty:checked~.service-slide-controls label[for="warranty"], #credit:checked~.service-slide-controls label[for="credit"] {
       background-color: #000000;
-
       color: #f7e184;
       text-align: left;
       padding: 15px 0;
@@ -1072,4 +1068,121 @@
 
     .site-navigation li:hover .site-navigation-sub {
       visibility: visible;
+    }
+
+    /*popaps*/
+
+    .modal {
+      position: fixed;
+      background-color: white;
+      background-position: 0 0;
+      box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
+    }
+
+    .modal-write {
+      width: 960px;
+      margin-left: -580px;
+      padding: 90px 100px;
+      top: 25px;
+      max-height: 500px;
+      bottom: 25px;
+      left: 50%;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      font-size: 0;
+      background-color: #f7e296;
+      border: 0;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .modal-close::before, .modal-close::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      left: 13px;
+      width: 35px;
+      height: 3px;
+      background-color: white;
+    }
+
+    .modal-close::before {
+      transform: rotate(45deg);
+    }
+
+    .modal-close::after {
+      transform: rotate(-45deg);
+    }
+
+    .write-form h3 {
+      margin: 0;
+      margin-bottom: 15px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .write-form p {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+
+    .write-form input[type="text"], .write-form input[type="mail"]{
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      border: none;
+      font: inherit;
+      color: black;
+      opacity: 0.4;
+    }
+
+
+    .write-form textarea[type="text"] {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 10px 20px;
+      background-color: #f2f2f2;
+      border: none;
+      font: inherit;
+      color: black;
+      opacity: 0.4;
+    }
+
+    .name-mail {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+    }
+
+    .name-mail ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      width: 47%;
+    }
+
+    .modal-map{
+      top: 30px;
+      left: 50%;
+
+      width: 965px;
+      height: 560px;
+
+      margin-bottom: 25px;
+      margin-left: -480px;
+
+      border: none;
+    }
+
+    .modal-map p{
+      margin: 0;
+      padding: 0;
     }
