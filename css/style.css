@@ -367,8 +367,14 @@
       margin-top: -100px;
     }
 
-    .slide-item-char {
-      padding-left: 60px;
+    .slide-item-char{
+      padding-left: 40px;
+      text-align: left;
+    }
+
+    .slide-item-img{
+      width: 560px;
+      text-align: center;
     }
 
     .slide-item-charecteristics td {
@@ -396,7 +402,7 @@
       font-weight: 180px;
       color: white;
       bottom: -25px;
-      right: -100px;
+      right: 1px;
       z-index: -1;
     }
 
@@ -413,7 +419,7 @@
       font-weight: 180px;
       color: white;
       bottom: -30px;
-      right: -130px;
+      right: 1px;
       z-index: -1;
     }
 
@@ -430,7 +436,7 @@
       font-weight: 180px;
       color: white;
       bottom: -25px;
-      right: -30px;
+      right: 1px;
       z-index: -1;
     }
 
@@ -443,8 +449,10 @@
     }
 
     .slide-item {
+      display: flex;
       display: none;
     }
+
 
     .slide-item h2 {
       max-width: 500px;
@@ -743,7 +751,11 @@
       padding: 0;
       padding-top: 65px;
       text-align: left;
-    }
+      }
+
+      .container-footer-1 li{
+        margin-bottom: 40px;
+      }
 
     .container-footer-2 {
       margin: 0;
@@ -757,6 +769,10 @@
       padding-right: 25px;
     }
 
+    .container-footer-2 ul{
+      padding-bottom: 25px;
+    }
+
     .container-footer-3 {
       margin: 0;
       padding: 0;
@@ -766,6 +782,11 @@
 
     .container-footer-3 li {
       padding-left: 20px;
+      margin-bottom: 40px;
+    }
+
+    .container-footer-3 a{
+      margin-bottom: 40px;
     }
 
     .user {
@@ -1080,6 +1101,7 @@
     }
 
     .modal-write {
+      display: none;
       width: 960px;
       margin-left: -580px;
       padding: 90px 100px;
@@ -1132,7 +1154,7 @@
       margin-bottom: 40px;
     }
 
-    .write-form input[type="text"], .write-form input[type="mail"]{
+    .write-form input[type="text"], .write-form input[type="mail"] {
       box-sizing: border-box;
       width: 100%;
       padding: 10px 20px;
@@ -1142,7 +1164,6 @@
       color: black;
       opacity: 0.4;
     }
-
 
     .write-form textarea[type="text"] {
       width: 100%;
@@ -1169,20 +1190,18 @@
       width: 47%;
     }
 
-    .modal-map{
+    .modal-map {
+      display: none;
       top: 30px;
       left: 50%;
-
       width: 965px;
       height: 560px;
-
       margin-bottom: 25px;
       margin-left: -480px;
-
       border: none;
     }
 
-    .modal-map p{
+    .modal-map p {
       margin: 0;
       padding: 0;
     }
