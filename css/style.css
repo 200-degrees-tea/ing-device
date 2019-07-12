@@ -170,14 +170,12 @@
     }
 
     .main-header {
-      width: 100%;
       min-height: 300px;
       margin-top: 40px;
       background-color: #f7e296;
     }
 
     .main-header-catalog {
-      width: 100%;
       height: 185px;
       margin-top: 40px;
       margin-bottom: 25px;
@@ -352,6 +350,7 @@
       padding: 0;
       padding-left: 60px;
       padding-right: 60px;
+
     }
 
     /*основная страница сайта*/
@@ -367,12 +366,12 @@
       margin-top: -100px;
     }
 
-    .slide-item-char{
+    .slide-item-char {
       padding-left: 40px;
       text-align: left;
     }
 
-    .slide-item-img{
+    .slide-item-img {
       width: 560px;
       text-align: center;
     }
@@ -391,6 +390,7 @@
 
     .slide-item-selfi h2 {
       position: relative;
+      z-index: 1;
     }
 
     .slide-item-selfi h2::before {
@@ -408,6 +408,7 @@
 
     .slide-item-watch h2 {
       position: relative;
+      z-index: 1;
     }
 
     .slide-item-watch h2::before {
@@ -425,6 +426,7 @@
 
     .slide-item-quadro h2 {
       position: relative;
+      z-index: 1;
     }
 
     .slide-item-quadro h2::before {
@@ -453,7 +455,6 @@
       display: none;
     }
 
-
     .slide-item h2 {
       max-width: 500px;
       min-height: 105px;
@@ -461,7 +462,6 @@
       margin-top: 65px;
       font-size: 47px;
       line-height: 56px;
-      z-index: 100;
     }
 
     .slide-item p {
@@ -751,11 +751,11 @@
       padding: 0;
       padding-top: 65px;
       text-align: left;
-      }
+    }
 
-      .container-footer-1 li{
-        margin-bottom: 40px;
-      }
+    .container-footer-1 li {
+      margin-bottom: 40px;
+    }
 
     .container-footer-2 {
       margin: 0;
@@ -769,7 +769,7 @@
       padding-right: 25px;
     }
 
-    .container-footer-2 ul{
+    .container-footer-2 ul {
       padding-bottom: 25px;
     }
 
@@ -785,7 +785,7 @@
       margin-bottom: 40px;
     }
 
-    .container-footer-3 a{
+    .container-footer-3 a {
       margin-bottom: 40px;
     }
 
@@ -1081,6 +1081,12 @@
     /*cкрываем подменю*/
 
     .site-navigation-sub {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      height: 150px;
+      z-index: 2;
       visibility: hidden;
       margin: 0;
       padding: 0;
@@ -1091,9 +1097,22 @@
       visibility: visible;
     }
 
-    /*popaps*/
+    .site-navigation-sub li {
+      padding-bottom: 25px;
+      padding-right: 40px;
+      background-color: #f7e296;
+
+    }
+
+
+    .elem {
+      flex-basis: 30%;
+    }
+
+      /*popaps*/
 
     .modal {
+      display: none;
       position: fixed;
       background-color: white;
       background-position: 0 0;
@@ -1101,7 +1120,6 @@
     }
 
     .modal-write {
-      display: none;
       width: 960px;
       margin-left: -580px;
       padding: 90px 100px;
@@ -1109,6 +1127,10 @@
       max-height: 500px;
       bottom: 25px;
       left: 50%;
+    }
+
+    .modal-show {
+      display: block;
     }
 
     .modal-close {
@@ -1191,7 +1213,6 @@
     }
 
     .modal-map {
-      display: none;
       top: 30px;
       left: 50%;
       width: 965px;
