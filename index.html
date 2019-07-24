@@ -39,18 +39,15 @@
         <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог товаров</a>
-
             <ul class="site-navigation-sub">
-                <li><a href="#">Очки виртуальной реальности</a></li>
-                <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li class="elem"><a href="#">Квадрокоптеры</a></li>
+              <li><a href="#">Очки виртуальной реальности</a></li>
+              <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li class="elem"><a href="#">Квадрокоптеры</a></li>
             </ul>
-
           </li>
-
           <ul class="container-half">
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Гарантия</a></li>
@@ -256,13 +253,15 @@
           <li><b>Автотрейдинг</b></li>
           <li><b>ЖелДорЭкспедиция</b></li>
         </ul>
-        <button class="button">О нас</button>
+        <button class="button">Подробнее о нас</button>
       </section>
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш оффис. Заодно вы сможете проверить работоспособность покупки.
           Всякое бывает</p>
-        <img src="img/map.jpg" alt="Карта">
+        <button class="map-button">
+          <img src="img/map.jpg" alt="Карта">
+        </button>
         <button class="write-link">Напишите нам</button>
       </section>
     </div>
@@ -356,8 +355,10 @@
 
 <section class="modal modal-map">
   <h2 class="visually-hidden">Карта</h2>
-  <p><img src="img/map-big.png"></p>
-  <span class="modal-close">x</span>
+  <p><img src="img/map-big.png">
+    <button class="modal-close" type="button">Закрыть</button>
+  </p>
+
 </section>
 
 
@@ -422,6 +423,7 @@
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
+    popup.classList.remove("modal-error");
     if (storage) {
       mail.focus();
     } else {
@@ -432,22 +434,51 @@
   form.addEventListener("submit", function (evt) {
     if (!name.value || !mail.value) {
       evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetwidth = popup.offsetwidth;
+      popup.classList.add("modal-error");
       console.log("Нужно ввести имя и почту");
     } else {
       if (isStorageSupport) {
         localStorage.setItem("name", name.value)
       }
     }
-  })
+  });
 
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("madal-show");
+        popup.classList.remove("modal-error");
       }
     }
-  })
+  });
+
+  var maplink = document.querySelector(".map-button");
+  var mappopup = document.querySelector(".modal-map");
+  var mapclose = mappopup.querySelector(".modal-close");
+
+  maplink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mappopup.classList.add("modal-show");
+  });
+
+  mapclose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mappopup.classList.remove("modal-show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    evt.preventDefault();
+    if (evt.keyCode === 27) {
+      if (mappopup.classList.contains("modal-show")) {
+        mappopup.classList.remove("modal-show");
+      }
+    }
+  });
+
+
 
 </script>
 
