@@ -115,15 +115,15 @@
       text-transform: uppercase
     }
 
-    .button hover {
+    .button:hover {
       background-color: #f4d361;
     }
 
-    .button focus {
+    .button:focus {
       opacity: 0.3;
     }
 
-    .button :active {
+    .button:active {
       background-color: black;
       color: #f4d361;
     }
@@ -350,7 +350,6 @@
       padding: 0;
       padding-left: 60px;
       padding-right: 60px;
-
     }
 
     /*основная страница сайта*/
@@ -976,8 +975,35 @@
     }
 
     .catalog-item {
+      position: relative;
       margin-left: 40px;
       margin-top: 70px;
+    }
+
+    .catalog-item .catalog-item-hover {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 360px;
+      height: 380px;
+    }
+
+    .catalog-item:hover .catalog-item-hover {
+      display: block;
+      cursor: pointer;
+      background-color: #eeeeee;
+      opacity: 0.7;
+    }
+
+    .button-hover{
+      display: flex;
+      flex-direction: column;
+      padding-top: 180px;
+    }
+
+    .catalog-item-hover a{
+      text-align: center;
     }
 
     .item-container {
@@ -1101,15 +1127,13 @@
       padding-bottom: 25px;
       padding-right: 40px;
       background-color: #f7e296;
-
     }
-
 
     .elem {
       flex-basis: 30%;
     }
 
-      /*popaps*/
+    /*popaps*/
 
     .modal {
       display: none;
@@ -1134,8 +1158,7 @@
       animation: bounce 0.6s;
     }
 
-
-    .modal-error{
+    .modal-error {
       animation: shake 0.6s;
     }
 
@@ -1235,48 +1258,40 @@
       z-index: 1;
     }
 
-    .modal-map iframe{
+    .modal-map iframe {
       position: relative;
       z-index: 2;
       border: none;
     }
 
-    .map-button{
+    .map-button {
       margin: 0;
       padding: 0;
       border: none;
       background-color: white;
     }
 
-  @keyframes bounce{
-    0%{
-      transform: translatey(-2000px);
+    @keyframes bounce {
+      0% {
+        transform: translatey(-2000px);
+      }
+      70% {
+        transform: translatey(30px);
+      }
+      90% {
+        transform: translatey(-10px);
+      }
+      transform: translatey(0);
     }
-    70%{
-      transform: translatey(30px);
-    }
-    90%{
-      transform: translatey(-10px);
-    }
-    transform: translatey(0);
-  }
 
-  @keyframes shake{
-    0%,
-    100% {
-      transform: translateX(0);
+    @keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+      }
+      20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+      }
     }
-    10%,
-    30%,
-    50%,
-    70%,
-    90%{
-      transform: translateX(-10px);
-    }
-    20%,
-    40%,
-    60%,
-    80%{
-      transform: translateX(10px);
-    }
-  }
