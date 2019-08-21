@@ -103,20 +103,35 @@
 
     button {
       display: inline-block;
-      margin-bottom: 30px;
-      padding: 13px 19px;
-      font: inherit;
+      width: font: inherit;
       text-align: center;
       color: black;
       vertical-align: middle;
       font-weight: bold;
-      background-color: #f4d361;
+      font-size: 24px;
       border: none;
-      text-transform: uppercase
+      text-transform: uppercase;
+      position: relative;
+      background: transparent;
+      letter-spacing: 4px;
     }
 
-    .button:hover {
+    .button::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 10px;
+      background-color: #f0c52e;
+      z-index: -1;
+      left: -10px;
+      top: 8px;
+    }
+
+    .button:hover::before {
+      width: 220px;
+      height: 40px;
       background-color: #f4d361;
+      top: -7px;
     }
 
     .button:focus {
@@ -126,6 +141,56 @@
     .button:active {
       background-color: black;
       color: #f4d361;
+    }
+
+    .about-button::before,.write-link::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 10px;
+      background-color: #f0c52e;
+      z-index: -1;
+      left: -10px;
+      top: 9px;
+    }
+
+    .about-button:hover::before, .write-link:hover::before {
+      width: 320px;
+      height: 40px;
+      background-color: #f4d361;
+      top: -7px;
+    }
+
+    .write-link{
+      padding-left: 30px;
+    }
+
+    .button-catalog{
+      position: relative;
+      z-index: 4;
+      font-size: 24px;
+      font-weight: bold;
+
+
+    }
+
+    .button-catalog::before{
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 10px;
+      z-index: -1;
+      left: 80px;
+      bottom: 10px;
+      background-color: #f0c52e;
+    }
+
+    .button-catalog:hover::before{
+      width: 200px;
+      height: 40px;
+      background-color: #f0c52e;
+      top: -7px;
+
     }
 
     .catalog-content a {
@@ -194,6 +259,14 @@
       margin-top: -20px;
       margin-left: 60px;
       margin-bottom: 35px;
+    }
+
+    .main-header-logo:hover {
+      opacity: 0.6;
+    }
+
+    .main-header-logo:active {
+      opacity: 0.3;
     }
 
     /*--------поиск, войти, сравнить, корзина--------*/
@@ -540,6 +613,15 @@
       background-color: #f7e296;
     }
 
+    .product-back:hover {
+      cursor: pointer;
+      background-color: #f0c52e;
+    }
+
+    .product-back:active {
+      opacity: 0.3;
+    }
+
     /*сервисный слайд*/
 
     .service-container {
@@ -631,9 +713,18 @@
       text-align: left;
       padding-left 25px;
       margin-bottom: 35px;
-      background-color: #f4d361;
     }
 
+    /*.service-slide-controls label::before{
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 10px;
+      background-color: #f0c52e;
+      z-index: -1;
+
+    }
+*/
     .service-slide-controls .activ::before {}
 
     #delivery:checked~.service-slide-colums #slide-serv1, #warranty:checked~.service-slide-colums #slide-serv2, #credit:checked~.service-slide-colums #slide-serv3 {
@@ -676,6 +767,14 @@
       justify-content: space-evenly;
       list-style: none;
       min-height: 55px;
+    }
+
+    .company-logo-img li {
+      opacity: 0.2;
+    }
+
+    .company-logo-img li:hover {
+      opacity: 1;
     }
 
     .index-columns {
@@ -996,13 +1095,14 @@
       opacity: 0.7;
     }
 
-    .button-hover{
+    .button-hover {
       display: flex;
       flex-direction: column;
       padding-top: 180px;
     }
 
-    .catalog-item-hover a{
+    .catalog-item-hover a {
+
       text-align: center;
     }
 
@@ -1268,7 +1368,7 @@
       margin: 0;
       padding: 0;
       border: none;
-      background-color: white;
+      background: transparent;
     }
 
     @keyframes bounce {
