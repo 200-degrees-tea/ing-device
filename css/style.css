@@ -101,6 +101,19 @@
       line-height: 48px;
     }
 
+    .input{
+      background-color: #f7e296;
+      border-width: 0;
+      opacity: 0.3;
+      margin-left: 10px;
+    }
+
+    .input:hover{
+      opacity: 1;
+    }
+
+
+
     button {
       display: inline-block;
       width: font: inherit;
@@ -286,6 +299,10 @@
       margin-left: auto;
     }
 
+    .site-navigation .container-half{
+      margin-left: -500px;
+    }
+
     .user-navigation-wrapper {
       display: flex;
       margin-bottom: 50px;
@@ -295,8 +312,7 @@
 
     .search-header {
       display: flex;
-      margin: 0;
-      padding: 0;
+      padding-left: 20px;
     }
 
     .user-login-header {
@@ -1032,6 +1048,12 @@
       line-height: 24px;
     }
 
+    .filters p{
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
     .filters label {
       font-weight: normal;
       font-size: 14px;
@@ -1211,12 +1233,15 @@
       flex-direction: column;
       flex-wrap: wrap;
       position: relative;
-      height: 150px;
       z-index: 2;
       visibility: hidden;
       margin: 0;
       padding: 0;
       margin-top: 25px;
+      width: 1200px;
+      height: 140px;
+      margin-left: -60px;
+      background-color: #f7e296;
     }
 
     .site-navigation li:hover .site-navigation-sub {
@@ -1226,8 +1251,9 @@
     .site-navigation-sub li {
       padding-bottom: 25px;
       padding-right: 40px;
-      background-color: #f7e296;
+      padding-left: 60px;
     }
+
 
     .elem {
       flex-basis: 30%;
@@ -1369,6 +1395,11 @@
       padding: 0;
       border: none;
       background: transparent;
+    }
+
+    textarea {
+      width: 100%;
+      background-color: #f3f3f3;
     }
 
     @keyframes bounce {

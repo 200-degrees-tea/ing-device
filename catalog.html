@@ -9,52 +9,54 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<div class="container">
-  <header class="main-header-catalog">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.png" alt="Логотип DEVICE">
-      </a>
-      <div class="user-navigation-wrapper">
-        <div class="search-header">
-          <div class="search-link">
-            <input type="search" name="search-user" placeholder="Поиск по сайту" class="input">
+<body>
+  <div class="container">
+    <header class="main-header-catalog">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.png" alt="Логотип DEVICE">
+        </a>
+        <div class="user-navigation-wrapper">
+          <div class="search-header">
+            <div class="search-link">
+              <input type="search" name="search-user" placeholder="Поиск по сайту" class="input">
+            </div>
+          </div>
+          <div class="container-half">
+            <ul class="user-login-header">
+              <li><a class="logout-link" href="#">Валентин Петухов</a></li>
+              <li><a href="#">Выйти</a></li>
+            </ul>
+            <ul class="user-compare-basket">
+              <li><a class="compare-link" href="#">Сравнить</a></li>
+              <li><a class="basket-link" href="#">Корзина</a></li>
+            </ul>
           </div>
         </div>
-        <div class="container-half">
-          <ul class="user-login-header">
-            <li><a class="logout-link" href="#">Валентин Петухов</a></li>
-            <li><a href="#">Выйти</a></li>
-          </ul>
-          <ul class="user-compare-basket">
-            <li><a class="compare-link" href="#">Сравнить</a></li>
-            <li><a class="basket-link" href="#">Корзина</a></li>
-          </ul>
-        </div>
-      </div>
-      <ul class="site-navigation">
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <ul class="site-navigation-sub">
-            <li><a href="#">Очки виртуальной реальности</a></li>
-            <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
-            <li><a href="#">Экшн-камеры</a></li>
-            <li><a href="#">Фитнес-браслеты</a></li>
-            <li><a href="#">Умные часы</a></li>
-            <li class="elem"><a href="#">Квадрокоптеры</a></li>
-          </ul>
-        </li>
-        <ul class="container-half">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="site-navigation">
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <ul class="site-navigation-sub">
+              <li><a href="#">Очки виртуальной реальности</a></li>
+              <li><a href="selfies-monopods.html">Моноподы для селфи</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li class="elem"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="container-half">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </li>
         </ul>
-      </ul>
-    </nav>
-  </header>
-</div>
+      </nav>
+    </header>
+  </div>
 
-<body>
   <main class="container-main">
     <div class="container">
       <h1>Моноподы для селфи</h1>
@@ -87,7 +89,7 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="range-price" onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
-          <legend>Стоимость</legend>
+          <p>Стоимость</p>
           <input name="flevel" id="flying" type="range" min="0" max="10000" value="5000" step="500">
           <output for="flying" name="level">5000</output>
         </form>
@@ -211,15 +213,19 @@
               </div>
             </li>
           </ul>
+
           <ul class="pagination-list">
             <li class="pagination-item-back"><a href="#">Назад</a></li>
-            <ul class="pagination-number">
-              <li class="pagination-item pagination-item-current"><a>1</a></li>
-              <li class="pagination-item"><a href="#">2</a></li>
-              <li class="pagination-item"><a href="#">3</a></li>
-            </ul>
+            <li>
+              <ul class="pagination-number">
+                <li class="pagination-item pagination-item-current"><a>1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+              </ul>
+            </li>
             <li class="pagination-item-next"><a href="#">Вперед</a></li>
           </ul>
+
         </section>
       </div>
     </div>
@@ -248,13 +254,13 @@
           <h2 class="visually-hidden">Социальные кнопки</h2>
           <ul>
             <li>
-              <a class="social-button" href="#"><img src="img/fb.png"></a>
+              <a class="social-button" href="#"><img src="img/fb.png" alt="Face book"></a>
             </li>
             <li>
-              <a class="social-button" href="#"><img src="img/in.png"></a>
+              <a class="social-button" href="#"><img src="img/in.png" alt="Instagram"></a>
             </li>
             <li>
-              <a class="social-button" href="#"><img src="img/tw.png"></a>
+              <a class="social-button" href="#"><img src="img/tw.png" alt="Twitter"></a>
             </li>
           </ul>
         </section>
@@ -272,7 +278,7 @@
           <li> <a href="tel:+74954959595">Тел.: +7(495)495-95-95</a></li>
         </ul>
         <div>
-          <a class="html-logo" href="#"><img src="img/logo-html.png"></a>
+          <a class="html-logo" href="#"><img src="img/logo-html.png" alt="HTML academy"></a>
         </div>
       </div>
     </div>
